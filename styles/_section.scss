@@ -1,0 +1,83 @@
+.section{
+    display: flex;
+    padding: 100px 80px;
+    column-gap: 80px;
+
+    &-aboutus{
+        justify-content: space-between;
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+
+        &__text{
+            h1{
+                flex-grow: 0;
+                font-family: 'Banny-Round';
+                font-size: 66px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: center;
+                color: #000;
+                text-transform: uppercase;
+            }
+    
+            h2{
+                font-family: 'OpenSans';
+                font-weight: 700;
+                font-size: $font-medium;   
+                line-height: 1.56;
+            }
+    
+            h3{
+                margin-top: 10px;
+                font-family: 'OpenSans';
+                font-size: $font-regular;
+                font-weight: 400;
+                line-height: 1.29;
+            }
+
+        
+        }
+    }
+
+    &-clock{
+        display: flex;
+        flex-direction: column;
+
+        .clock-upper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 5px;
+                row-gap: 5px;
+                
+            }
+    
+            button{
+                height: 60px;
+                width: 100%;
+                cursor: pointer;
+                background-color: #e8c300;
+            }
+    
+            button:hover{
+                color: grey;
+            }
+        }
+
+        .time{
+            text-align: center;
+            color: rgba(51, 51, 51, 0.5);
+        }
+    }
+}

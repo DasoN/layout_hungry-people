@@ -1,0 +1,87 @@
+@import '_var';
+@import '_header';
+@import '_section';
+@import '_article';
+@import '_footer';
+@import '_menu';
+@import '_events';
+@import '_decor';
+@import '_contact';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Banny-Round';
+}
+
+.wrapper{
+    padding: 0 80px;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    background: none;
+    font-family: 'OpenSans';
+    font-size: $font-min;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #e8c300;
+}
+
+h1{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    background-color: yellow;
+    width: 67px;
+    height: 3px;
+    border-radius: 50px;
+}
+
+input{
+    background: #E5E5E5;
+    border: none;
+    height: 60px;
+    border-radius: 5px;
+    width: 49%;
+}
+
+input::placeholder{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.map{
+    background: url('../assets/map/mapsdirectionspart1-56cd4d395f9b5879cc5bd51a.png') center center;
+    background-size: cover;
+    height: 475px;
+    width: 100%;
+}
